@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.parking-lot {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.slot {
+    width: 100px;
+    height: 200px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.slot.available {
+    background-color: #d4edda;
+}
+
+.slot.booked {
+    background-color: #f8d7da;
+    cursor: not-allowed;
+}
+
+.slot.selected {
+    border-color: #007bff;
+}
+
+.car-shape {
+    width: 80%;
+    height: 60%;
+    background-color: #007bff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
